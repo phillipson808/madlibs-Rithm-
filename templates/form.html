@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Madlibs Form</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div>
+        <h1>Madlibs</h1>
+        <form action="/story">
+            BODY CONTENT GOES HERE
+            {% for prompt in prompts %}
+                <p>{{prompt}}</p><input type='text' name={{prompt}}>
+            {% endfor %}
+            <button>Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
